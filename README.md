@@ -8,10 +8,12 @@ In multi-agent reinforcement learning, multiple agents learn simultaneously whil
 
 ### Training 
 training_diff.py/train_navi.py/train_tag.py
+
 You can change the algorithm and parameters by changing the arguments
 
 ### Plot
 plot.py
+
 You can switch different algorithms by commenting or changing the [alg_list],you can switch different env by commenting or changing the [env], and you can switch different results by commenting or changing the [content]
 
 ### Visulization
@@ -19,17 +21,15 @@ mix_evaluate.py
 
 We provide different model for evaluate and visulize the performance of [Predator and Prey] task. You can choose Predator and Prey trained by different algorithm by changing the [agent_run_num] and [adversary_run_num].
 
-## Run E2GAN search on CIFAR-10
 
 ## Citation
 Please cite our work if you find it useful.
 ```bibtex
-@InProceedings{Tian_2020_ECCV,
-author = {Yuan Tian, Qin Wang, Zhiwu Huang, Wen Li, Dengxin Dai, Minghao Yang, Jun Wang, Olga Fink},
-title = {Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search},
-booktitle = {The European Conference on Computer Vision (ECCV)},
-month = {September},
-year = {2020}
+@article{tian2022multi,
+  title={Multi-agent Actor-Critic with Time Dynamical Opponent Model},
+  author={Tian, Yuan and Kladny, Klaus-Rudolf and Wang, Qin and Huang, Zhiwu and Fink, Olga},
+  journal={arXiv preprint arXiv:2204.05576},
+  year={2022}
 }
 ```
-For questions regarding the code, please open an issue or contact Yuan and Qin via email {yutian} AT ethz.ch
+For questions regarding the code, please open an issue or contact Yuan via email {yutian} AT ethz.ch
