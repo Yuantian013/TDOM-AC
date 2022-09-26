@@ -13,10 +13,11 @@ git clone https://github.com/Yuantian013/TDOM-AC
 cd TDOM-AC-main
 pip install -r requirements.txt
 ```
-## Multi-Agent Particle Environments
+## OpenAI Baseline
+- Download and install the OpenAI Baseline code into the main folder[here](https://github.com/openai/baselines)
+by following the `README`.
 
-We demonstrate here how the code can be used in conjunction with the
-[Multi-Agent Particle Environments (MPE)](https://github.com/openai/multiagent-particle-envs).
+## Multi-Agent Particle Environments
 
 - Download and install the MPE code into the main folder[here](https://github.com/openai/multiagent-particle-envs)
 by following the `README`.
