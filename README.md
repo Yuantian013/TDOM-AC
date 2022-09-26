@@ -13,6 +13,15 @@ git clone https://github.com/Yuantian013/TDOM-AC
 cd TDOM-AC-main
 pip install -r requirements.txt
 ```
+## Multi-Agent Particle Environments
+
+We demonstrate here how the code can be used in conjunction with the
+[Multi-Agent Particle Environments (MPE)](https://github.com/openai/multiagent-particle-envs).
+
+- Download and install the MPE code [here](https://github.com/openai/multiagent-particle-envs)
+by following the `README`.
+
+- Ensure that `multiagent-particle-envs` has been added to your `PYTHONPATH` (e.g. in `~/.bashrc` or `~/.bash_profile`).
 
 ### Training 
 training_diff.py/train_navi.py/train_tag.py
