@@ -18,7 +18,7 @@ pip install -r requirements.txt
 We demonstrate here how the code can be used in conjunction with the
 [Multi-Agent Particle Environments (MPE)](https://github.com/openai/multiagent-particle-envs).
 
-- Download and install the MPE code [here](https://github.com/openai/multiagent-particle-envs)
+- Download and install the MPE code into the main folder[here](https://github.com/openai/multiagent-particle-envs)
 by following the `README`.
 
 - Ensure that `multiagent-particle-envs` has been added to your `PYTHONPATH` (e.g. in `~/.bashrc` or `~/.bash_profile`).
