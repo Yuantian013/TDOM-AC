@@ -40,7 +40,8 @@ python plot.py
 You can switch different algorithms by commenting or changing the [alg_list],you can switch different env by commenting or changing the [env], and you can switch different results by commenting or changing the [content]
 
 ### Visulization
-[[p7p.gif]]
+![image](https://github.com/Yuantian013/TDOM-AC/blob/main/p7p.gif)：
+
 ```bash
 cd BMASAC
 python mix_evaluate.py
