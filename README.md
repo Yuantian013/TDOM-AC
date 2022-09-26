@@ -5,6 +5,11 @@ Code for [Multi-agent Actor-Critic with Time Dynamical Opponent Model](https://a
 ## Introduction
 In multi-agent reinforcement learning, multiple agents learn simultaneously while interacting with a common environment and each other. Since the agents adapt their policies during learning, not only the behavior of a single agent becomes non-stationary, but also the environment as perceived by the agent. This renders it particularly challenging to perform policy improvement. In this paper, we propose to exploit the fact that the agents seek to improve their expected cumulative reward and introduce a novel \textit{Time Dynamical Opponent Model} (TDOM) to encode the knowledge that the opponent policies tend to improve over time. We motivate TDOM theoretically by deriving a lower bound of the log objective of an individual agent and further propose \textit{Multi-Agent Actor-Critic with Time Dynamical Opponent Model} (TDOM-AC). We evaluate the proposed TDOM-AC on a differential game and the Multi-agent Particle Environment. We show empirically that TDOM achieves superior opponent behavior prediction during test time. The proposed TDOM-AC methodology outperforms state-of-the-art Actor-Critic methods on the performed experiments in cooperative and \textbf{especially} in mixed cooperative-competitive environments. TDOM-AC results in a more stable training and a faster convergence.
 
+## Dependencies
+```bash
+conda create --name tdomac python=3.6
+conda activate tdomac
+```
 
 ### Training 
 training_diff.py/train_navi.py/train_tag.py
