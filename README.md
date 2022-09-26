@@ -9,6 +9,9 @@ In multi-agent reinforcement learning, multiple agents learn simultaneously whil
 ```bash
 conda create --name tdomac python=3.6
 conda activate tdomac
+git clone https://github.com/Yuantian013/TDOM-AC
+cd TDOM-AC-main
+pip install -r requirements.txt
 ```
 
 ### Training 
