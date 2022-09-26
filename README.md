@@ -14,12 +14,12 @@ cd TDOM-AC-main
 pip install -r requirements.txt
 ```
 ## OpenAI Baseline
-- Download and install the OpenAI Baseline code[here] into the main folder(https://github.com/openai/baselines)
+- Download and install the OpenAI Baseline code into the main folder [here](https://github.com/openai/baselines)
 by following the `README`.
 
 ## Multi-Agent Particle Environments
 
-- Download and install the MPE code[here] into the main folder(https://github.com/openai/multiagent-particle-envs)
+- Download and install the MPE code into the main folder [here](https://github.com/openai/multiagent-particle-envs)
 by following the `README`.
 
 - Ensure that `multiagent-particle-envs` has been added to your `PYTHONPATH` (e.g. in `~/.bashrc` or `~/.bash_profile`).
