@@ -24,18 +24,26 @@ by following the `README`.
 
 - Ensure that `multiagent-particle-envs` has been added to your `PYTHONPATH` (e.g. in `~/.bashrc` or `~/.bash_profile`).
 
-### Training 
-training_diff.py/train_navi.py/train_tag.py
-
+### Training
+```bash
+cd BMASAC
+python training_diff.py/train_navi.py/train_tag.py
+```
 You can change the algorithm and parameters by changing the arguments
 
 ### Plot
-plot.py
+```bash
+cd BMASAC
+python plot.py
+```
 
 You can switch different algorithms by commenting or changing the [alg_list],you can switch different env by commenting or changing the [env], and you can switch different results by commenting or changing the [content]
 
 ### Visulization
-mix_evaluate.py
+```bash
+cd BMASAC
+python mix_evaluate.py
+```
 
 We provide different model for evaluate and visulize the performance of [Predator and Prey] task. You can choose Predator and Prey trained by different algorithm by changing the [agent_run_num] and [adversary_run_num].
 
