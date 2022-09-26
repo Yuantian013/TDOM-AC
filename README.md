@@ -51,10 +51,11 @@ We provide different model for evaluate and visulize the performance of [Predato
 ## Citation
 Please cite our work if you find it useful.
 ```bibtex
-@article{tian2022multi,
+@misc{tian2022multi,
   title={Multi-agent Actor-Critic with Time Dynamical Opponent Model},
   author={Tian, Yuan and Kladny, Klaus-Rudolf and Wang, Qin and Huang, Zhiwu and Fink, Olga},
-  journal={arXiv preprint arXiv:2204.05576},
+  eprint={2204.05576},
+  archivePrefix={arXiv},
   year={2022}
 }
 ```
