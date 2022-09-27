@@ -27,7 +27,12 @@ by following the `README`.
 ### Training
 ```bash
 cd BMASAC
-python training_diff.py/train_navi.py/train_tag.py
+# Differential Game
+python training_diff.py 
+# Navigation
+python train_navi.py
+# Predator and Prey
+python train_tag.py
 ```
 You can change the algorithm and parameters by changing the arguments
 
