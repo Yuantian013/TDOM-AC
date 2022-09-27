@@ -50,7 +50,7 @@ python plot.py
 - You can switch different algorithms by commenting or changing the [alg_list],you can switch different env by commenting or changing the [env], and you can switch different information of the trainig results by commenting or changing the [content]
 
 ### Visulization
-- You can visulize your agent behavior and even mix different agents that trained by different algoirthms together.
+- You can visulize your agent behavior and even mix different agents that trained by different algoirthms.
 ![image](https://github.com/Yuantian013/TDOM-AC/blob/main/p7p.gif)：
 
 ```bash
