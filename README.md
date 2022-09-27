@@ -58,7 +58,7 @@ cd BMASAC
 python mix_evaluate.py
 ```
 
-- We provide different model for evaluate and visulize the performance of [Predator and Prey] task. You can choose Predator and Prey trained by different algorithm by changing the [agent_run_num] and [adversary_run_num].
+- We provide different models for evaluating and visulizing the behavior of the [Predator and Prey] task. You can choose predators and prey trained via different algorithms by changing the [agent_run_num] and [adversary_run_num].
 
 
 ## Citation
