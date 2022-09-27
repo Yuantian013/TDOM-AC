@@ -37,6 +37,9 @@ python train_tag.py
 You can change the algorithm and parameters by changing the arguments
 
 ### Plot
+![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git1.png)：
+![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git2.png)：
+![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git3.png)：
 ```bash
 cd BMASAC
 python plot.py
