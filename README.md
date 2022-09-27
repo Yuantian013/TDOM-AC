@@ -47,10 +47,10 @@ cd BMASAC
 python plot.py
 ```
 
-- You can switch different algorithms by commenting or changing the [alg_list],you can switch different env by commenting or changing the [env], and you can switch different information of the trainig results by commenting or changing the [content]
+- You can switch between different algorithms by commenting or changing the [alg_list], you can switch between different env by commenting out or changing the [env], and you can switch different information of the trainig results by commenting or changing the [content].
 
-### Visulization
-- You can visulize your agent behavior and even mix different agents that trained by different algoirthms.
+### Visualization
+- You can visualize your agent's behavior and even mix different agents that have been trained using different algoirthms.
 ![image](https://github.com/Yuantian013/TDOM-AC/blob/main/p7p.gif)：
 
 ```bash
@@ -58,12 +58,12 @@ cd BMASAC
 python mix_evaluate.py
 ```
 
-- We provide different models for evaluating and visulizing the behavior of the [Predator and Prey] task. You can choose predators and prey trained via different algorithms by changing the [agent_run_num] and [adversary_run_num].
+- We provide different models for evaluating and visualizing the behavior of the [Predator and Prey] task. You can choose predators and prey trained via different algorithms by changing the [agent_run_num] and [adversary_run_num].
 
 
 ## Citation
 Please cite our work if you find it useful.
-```bibtex
+```biblatex
 @misc{tian2022multi,
   title={Multi-agent Actor-Critic with Time Dynamical Opponent Model},
   author={Tian, Yuan and Kladny, Klaus-Rudolf and Wang, Qin and Huang, Zhiwu and Fink, Olga},
