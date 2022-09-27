@@ -25,6 +25,7 @@ by following the `README`.
 - Ensure that `multiagent-particle-envs` has been added to your `PYTHONPATH` (e.g. in `~/.bashrc` or `~/.bash_profile`).
 
 ### Training
+You can simply train agents via different algorithms and hyper-paramters.
 ```bash
 cd BMASAC
 # Differential Game
@@ -34,9 +35,10 @@ python train_navi.py
 # Predator and Prey
 python train_tag.py
 ```
-You can change the algorithm and parameters by changing the arguments
+You can change the algorithm and hyper-paramters by changing the arguments.
 
 ### Plot
+You can plot all the recorded information of your training 
 ![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git1.png)：
 ![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git2.png)：
 ![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git3.png)：
@@ -48,6 +50,7 @@ python plot.py
 You can switch different algorithms by commenting or changing the [alg_list],you can switch different env by commenting or changing the [env], and you can switch different results by commenting or changing the [content]
 
 ### Visulization
+You can visulize your agent behavior and even mix different agents that trained by different algoirthms together.
 ![image](https://github.com/Yuantian013/TDOM-AC/blob/main/p7p.gif)：
 
 ```bash
