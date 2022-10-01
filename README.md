@@ -1,5 +1,5 @@
 # TDOM-AC
-Code for [Multi-agent Actor-Critic with Time Dynamical Opponent Model](https://arxiv.org/pdf/2204.05576)
+Code for [Multi-agent Actor-Critic with Time Dynamical Opponent Model](https://arxiv.org/pdf/2204.05576). We use https://github.com/shariqiqbal2810/maddpg-pytorch as backbone.
 
 
 ## Introduction
@@ -22,7 +22,7 @@ by following the `README`.
 - Download and install the MPE code into the main folder [here](https://github.com/openai/multiagent-particle-envs)
 by following the `README`.
 
-- Ensure that `multiagent-particle-envs` has been added to your `PYTHONPATH` (e.g. in `~/.bashrc` or `~/.bash_profile`).
+- Ensure that `multiagent-particle-envs` (https://github.com/shariqiqbal2810/multiagent-particle-envs) has been added to your `$PYTHONPATH` (e.g. in `~/.bashrc` or `~/.bash_profile`).
 
 ### Training
 You can simply train agents via different algorithms and hyper-paramters.
