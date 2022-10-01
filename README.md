@@ -14,7 +14,7 @@ cd TDOM-AC-main
 pip install -r requirements.txt
 ```
 ## OpenAI Baseline
-- Download and install the OpenAI Baseline code into the main folder [here](https://github.com/openai/baselines)
+Download and install the OpenAI Baseline code into the main folder [here](https://github.com/openai/baselines)
 by following the `README`.
 
 ## Multi-Agent Particle Environments
@@ -25,7 +25,7 @@ by following the `README`.
 - Ensure that `multiagent-particle-envs` has been added to your `PYTHONPATH` (e.g. in `~/.bashrc` or `~/.bash_profile`).
 
 ### Training
-- You can simply train agents via different algorithms and hyper-paramters.
+You can simply train agents via different algorithms and hyper-paramters.
 ```bash
 cd BMASAC
 # Differential Game
@@ -35,38 +35,35 @@ python train_navi.py
 # Predator and Prey
 python train_tag.py
 ```
-- You can change the algorithm and hyper-paramters by changing the arguments.
+You can change the algorithm and hyper-paramters by changing the arguments.
 
 ### Plot
-- You can plot all the recorded information of your training
-
-<p align="center">
-  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/git1.png" />
-  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/git2.png" />
-  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/git3.png" />
-</p>
+You can plot all the recorded information of your training
 
 ```bash
 cd BMASAC
 python plot.py
 ```
 
-- You can switch between different algorithms by commenting or changing the [alg_list], you can switch between different env by commenting out or changing the [env], and you can switch different information of the trainig results by commenting or changing the [content].
+<p align="center">
+  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/visualizations/Diff-training-Return.svg" width="600"/>
+</p>
+
+You can switch between different algorithms by commenting or changing the [alg_list], you can switch between different env by commenting out or changing the [env], and you can switch different information of the trainig results by commenting or changing the [content].
 
 ### Visualization
-- You can visualize your agent's behavior and even mix different agents that have been trained using different algoirthms.
-
-<p align="center">
-  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/p7p.gif" alt="animated" />
-</p>
+You can visualize your agent's behavior and even mix different agents that have been trained using different algorithms.
 
 ```bash
 cd BMASAC
 python mix_evaluate.py
 ```
 
+<p align="center">
+  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/visualizations/p7p.gif" alt="animated" />
+</p>
 
-- We provide different models for evaluating and visualizing the behavior of the [Predator and Prey] task. You can choose predators and prey trained via different algorithms by changing the [agent_run_num] and [adversary_run_num].
+We provide different models for evaluating and visualizing the behavior of the [Predator and Prey] task. You can choose predators and prey trained via different algorithms by changing the [agent_run_num] and [adversary_run_num].
 
 
 ## Citation
@@ -81,3 +78,4 @@ Please cite our work if you find it useful.
 }
 ```
 For questions regarding the code, please open an issue or contact Yuan via email {yutian} AT ethz.ch
+
