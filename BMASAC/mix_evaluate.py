@@ -7,7 +7,7 @@ from pathlib import Path
 from torch.autograd import Variable
 from utils.make_env import make_env
 from algorithms.maddpg import MADDPG
-from algorithms.bmasac import BMASAC
+from algorithms.tdomac import BMASAC
 from algorithms.pr2 import PR2
 from algorithms.rommeo import ROMMEO
 
@@ -47,7 +47,6 @@ def run(config):
         if config.save_gifs:
             frames = []
             frames.append(env.render('rgb_array')[0])
-        # env.render('human')
         ep_adv=0
         for t_i in range(config.episode_length):
             calc_start = time.time()
@@ -78,7 +77,8 @@ def run(config):
             elapsed = calc_end - calc_start
             if elapsed < ifi:
                 time.sleep(ifi - elapsed)
-            # env.render('human')
+            if config.render_human:
+                env.render('human')
         average_adv = average_adv + ep_adv
         print(ep_i,ep_adv,average_adv/(ep_i+1))
 
@@ -91,16 +91,17 @@ if __name__ == '__main__':
     parser.add_argument("--model_name", default="Provide_Models",
                         help="Name of model")
     # TDOM-AC:0 ROMMEO:1 PR2:2
-    parser.add_argument("--agent_run_num", default=0, type=int)#9 & 12
-    parser.add_argument("--adversary_run_num", default=0, type=int)  # 9 & 12
-    parser.add_argument("--save_gifs", action="store_true",
-                        help="Saves gif of each episode into model directory")
+    parser.add_argument("--agent_run_num", default=0, type=int)
+    parser.add_argument("--adversary_run_num", default=0, type=int) 
+    #parser.add_argument("--save_gifs", action="store_true",
+    #                    help="Saves gif of each episode into model directory")
     parser.add_argument("--incremental", default=None, type=int,
                         help="Load incremental policy from given episode " +
                              "rather than final policy")
     parser.add_argument("--n_episodes", default=100, type=int)
     parser.add_argument("--episode_length", default=100, type=int)
-    parser.add_argument("--fps", default=30, type=int)
+    parser.add_argument("--render_human", default=True, type=bool, help="Whether to render visualization on screen")#9 & 12
+    parser.add_argument("--fps", default=20, type=int)
 
     config = parser.parse_args()
 
