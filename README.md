@@ -38,10 +38,14 @@ python train_tag.py
 - You can change the algorithm and hyper-paramters by changing the arguments.
 
 ### Plot
-- You can plot all the recorded information of your training 
-![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git1.png)：
-![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git2.png)：
-![image](https://github.com/Yuantian013/TDOM-AC/blob/main/git3.png)：
+- You can plot all the recorded information of your training
+
+<p align="center">
+  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/git1.png" />
+  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/git2.png" />
+  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/git3.png" />
+</p>
+
 ```bash
 cd BMASAC
 python plot.py
@@ -51,12 +55,16 @@ python plot.py
 
 ### Visualization
 - You can visualize your agent's behavior and even mix different agents that have been trained using different algoirthms.
-![image](https://github.com/Yuantian013/TDOM-AC/blob/main/p7p.gif)：
+
+<p align="center">
+  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/p7p.gif" alt="animated" />
+</p>
 
 ```bash
 cd BMASAC
 python mix_evaluate.py
 ```
+
 
 - We provide different models for evaluating and visualizing the behavior of the [Predator and Prey] task. You can choose predators and prey trained via different algorithms by changing the [agent_run_num] and [adversary_run_num].
 
