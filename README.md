@@ -46,7 +46,7 @@ python plot.py
 ```
 
 <p align="center">
-  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/visualizations/Diff-training-Return.svg" width="600"/>
+  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/visualizations/Diff-training-Return.svg" width="500"/>
 </p>
 
 You can switch between different algorithms by commenting or changing the [alg_list], you can switch between different env by commenting out or changing the [env], and you can switch different information of the trainig results by commenting or changing the [content].
@@ -60,7 +60,7 @@ python mix_evaluate.py
 ```
 
 <p align="center">
-  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/visualizations/p7p.gif" alt="animated" />
+  <img src="https://github.com/Yuantian013/TDOM-AC/blob/main/visualizations/demo.gif" alt="animated" width="400"/>
 </p>
 
 We provide different models for evaluating and visualizing the behavior of the [Predator and Prey] task. You can choose predators and prey trained via different algorithms by changing the [agent_run_num] and [adversary_run_num].
