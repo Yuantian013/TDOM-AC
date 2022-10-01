@@ -264,8 +264,8 @@ def plot_training_results(results, alg_list, contents, figsize = None):
             if args['formal_plot']:
                 plt.xlim(0, round(result['total_numsteps'].values[min_length-1] / 1000, 1) * 1000)
                 plt.xlabel('Training steps', fontsize=20)
-                # plt.ylabel('Total Reward', fontsize=20)
-                plt.ylabel('Prediction Error', fontsize=20)
+                plt.ylabel('Total Reward', fontsize=20)
+                # plt.ylabel('Prediction Error', fontsize=20)
                 plt.xticks(size=16)
                 plt.yticks(size=16)
                 plt.savefig('-'.join([exp, 'training', content]) + '.pdf')
@@ -424,8 +424,8 @@ def main(args, alg_list, measure_list, env):
                 mesh_plot_content.append(content)
 
         for exp in results.keys():
-            plot_mesh(results[exp], alg_list, mesh_plot_content,measure_list)
-            plot_line(results[exp], alg_list, line_plot_content,measure_list, exp)
+            plot_mesh(results[exp], alg_list, mesh_plot_content, measure_list)
+            plot_line(results[exp], alg_list, line_plot_content, measure_list, exp)
 
     return
 
@@ -440,16 +440,11 @@ if __name__ == '__main__':
     args = {
         'data': ['training', 'eval'][0],
         'eval_content': [
-
             'impulse',
-
         ],
-
-        'plot_list': [str(i) for i in range(0,1000)],
+        'plot_list': [str(i) for i in range(0, 1000)],
         'formal_plot':True,
-
         }
-
 
     content = [
         # 'Advantage',
@@ -461,8 +456,7 @@ if __name__ == '__main__':
         # 'OUT',
         # 'Step',
         # 'ent0',
-        'Return' # For Diff Game
-        # 'Total Return',
+          'Return' # For Diff Game
         # 'Total Return',
         # 'policy_loss3',
         # 'policy_loss1',
