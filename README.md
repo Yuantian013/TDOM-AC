@@ -1,5 +1,5 @@
 # TDOM-AC
-Code for [Multi-agent Actor-Critic with Time Dynamical Opponent Model](https://arxiv.org/pdf/2204.05576). We use https://github.com/shariqiqbal2810/maddpg-pytorch as backbone.
+Code for [Multi-agent Actor-Critic with Time Dynamical Opponent Model](https://www.sciencedirect.com/science/article/pii/S0925231222013200). We use https://github.com/shariqiqbal2810/maddpg-pytorch as backbone.
 
 
 ## Introduction
@@ -69,12 +69,14 @@ We provide different models for evaluating and visualizing the behavior of the [
 ## Citation
 Please cite our work if you find it useful.
 ```biblatex
-@misc{tian2022multi,
-  title={Multi-agent Actor-Critic with Time Dynamical Opponent Model},
+@article{tian2023multi,
+  title={Multi-agent actor-critic with time dynamical opponent model},
   author={Tian, Yuan and Kladny, Klaus-Rudolf and Wang, Qin and Huang, Zhiwu and Fink, Olga},
-  eprint={2204.05576},
-  archivePrefix={arXiv},
-  year={2022}
+  journal={Neurocomputing},
+  volume={517},
+  pages={165--172},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 For questions regarding the code, please open an issue or contact Yuan via email {yutian} AT ethz.ch
